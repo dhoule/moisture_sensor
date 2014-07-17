@@ -3,8 +3,12 @@ void setup(){
 }
 
 void loop(){
-  int sensorValue = analogRead(A0);
-  Serial.println(sensorValue);// Need to do something later
+  int sensorValue1 = analogRead(A0);
+  int sensorValue2 = analogRead(A1);
+  Serial.print("1: ");
+  Serial.print(sensorValue1);
+  Serial.print("    2: ");
+  Serial.println(sensorValue2);// Need to do something later
   // Air = sensorValue of 674
   // Straight, filtered water = sensorValue of 324
   delay(100); // Wait 100 micro seconds before continuing
